@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import "components/header.css";
+@import "components/main-section.css";
+@import "components/card.css";
+@import "components/footer.css";
+@import "components/restaurant.css";
+@import "components/restaurant-menu.css";
+@import "components/appetizers.css";
+@import "components/appetizers_card.css";
+@import "variables.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* убираем отступы и поля, а также list-style для "ul", 
+* и добавляем "position:relative" */
+nav ul {
+  padding:0;
+  margin:0;
+  list-style: none;
+  position: relative;
+
+  }
+
+/* применяем inline-block позиционирование к элементам навигации */
+nav ul li {
+  margin: 0px -7px 0 0;
+  display:inline-block;
+  background: #3B3B3B;
+  border-radius: 2px;
+  padding-bottom: 15px;
+  width: 197px;
+  height: 40px;
+  }
+
+/* стилизуем ссылки */
+nav a {
+  display:block;
+  padding:0 10px;
+  color:#FFF;
+  font-size:20px;
+  line-height: 60px;
+  text-decoration:none;
+}
+
+/* изменяем цвет фона при наведении курсора */
+nav a:hover {
+  background-color: #000000;
+}
+       nav ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+    }
+    
+    /* отображаем выпадающий список при наведении */
+    nav ul li:hover > ul {
+        display:inherit;
+    }
+    
+    /* первый уровень выпадающего списка */
+    nav ul ul li {
+        min-width:170px;
+        float:none;
+        display:list-item;
+        position: relative;
+    }
+.footer__main{
+  margin-top: 20px;
+}
+.footer__info{
+  display: flex;
+  max-width: 1000px;
+  height: 200px;
+}
+.footer__left{
+  width: 300px;
+  height: 250px;
+}
+.footer__right{
+  display: flex;
+  width: 700px;
+  height: 250px;
+}
+.footer__right_left{
+  width: 350px;
+  height: 230px;
+  padding-top: 20px;
+}
+.footer__right_right{
+  width: 350px;
+  height: 230px;
+  padding-top: 20px;
+}
+.footer__right_text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #FFFFFF;
+}
+.adaptiv_hr_include{
+  display: none;
+}
+.footer__icons{
+  height: 130px;
+  width: 1000px;
+}
+.foto_app_store{
+  margin: 50px 0 0 350px;
+}
+.foto_play_market{
+  margin-bottom: 7px;
+}
+.footer__end{
+  width: 960px;
+  height: 30px;
+  margin-top: 50px;
+}
+.footer__end_element{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  /* identical to box height */
+  color: #FFFFFF;
+  margin: 0 240px 0 0;
+  padding-top: 30px;
+}
+.up_button{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: #59BD5A;
+  margin: 440px 0 0 1000px;
+}
+.up_button__icons{
+  margin: 30px 0 0 32px;
+}
+.uber_eats{
+  margin-top: 30px;
+  width: 150px;
+  height: 120px;
+}
+.juil{
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #49A144;
+}
+.uber_eats_text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+.uber_eats_image{
+  margin-top: 10px;
+}
+@media (max-width: 1200px){
+  .footer__info {
+    max-width: 970px;
+  }
+  .up_button{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #59BD5A;
+    margin: 440px 0 0 800px;
+  }
+}
+@media (max-width: 992px){
+  .up_button{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #59BD5A;
+    margin: 440px 0 0 1000px;
+  }
+  .footer__info {
+    max-width: 750px;
+  }
+  .footer__right_left{
+    width: 250px;
+    height: 230px;
+    padding-top: 20px;
+  }
+  .footer__right_right{
+    width: 250px;
+    height: 230px;
+    padding-top: 20px;
+  }
+  .footer {
+    width: 1500px;
+  }
+}
+@media (max-width: 767px){
+  .up_button{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #59BD5A;
+    margin: 650px 0 0 1000px;
+  }
+  .footer__info {
+    max-width: 450px;
+  }
+  .footer__info{
+    display: flex;
+    max-width: 1000px;
+    height: 250px;
+    flex-direction: column;
+  }
+  .footer__right{
+    display: flex;
+    width: 700px;
+    height: 250px;
+    flex-direction: column;
+  }
+  .adaptiv_hr{
+    display: none;
+  }
+  .adaptiv_hr_include{
+    display: block;
+    width: 950px;
+  }
+  .footer__icons{
+    margin-top: 100px;
+  }
+  .footer__right_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+
+    color: #FFFFFF;
+  }
+  .footer__end_element{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0 240px 0 0;
+    display: block;
+  }
+  .footer__end{
+    width: 960px;
+    height: 30px;
+    margin-top: 10px;
+  }
+  .footer__icons{
+    height: 240px;
+    width: 1000px;
+  }
+  .foto_app_store{
+    margin: 180px 0 0 350px;
+  }
+  .foto_play_market{
+    margin-bottom: 7px;
+  }
+  .uber_eats{
+    margin-top: 70px;
+    width: 150px;
+    height: 120px;
+  }
+}

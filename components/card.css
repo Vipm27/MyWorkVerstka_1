@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 308px;
+  padding: 0 0 21px;
+  text-decoration: none;
+}
+
+.card__restaurant {
+  font-family: var(--main-font);
+  font-size: 16px;
+  color: var(--font-color);
+  margin-top: 16px;
+}
+
+.card__category {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--gray);
+  margin: 4px 0;
+}
+
+.card__time {
+  font-family: var(--main-font);
+  font-size: 13px;
+  line-height: 21px;
+  color: var(--font-color);
+}
+.main_dilivir_info{
+  margin-top: 30px;
+  display: none;
+}
+@media (max-width: 1200px){
+  .card {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px){
+  .card {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px){
+  .card {
+    width: 850px;
+  }
+  .card__restaurant {
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--font-color);
+    margin-top: 16px;
+  }
+  
+  .card__category {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--gray);
+    margin: 8px 0;
+  }
+  
+  .card__time {
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--font-color);
+  }
+  .main_dilivir_info{
+    margin-top: 30px;
+    display: block;
+  }
+  .delivery_footer{
+    display: none;
+  }
+}
